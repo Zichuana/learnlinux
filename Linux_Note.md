@@ -21,3 +21,11 @@
 2. 在wt输入命令`ssh XXX@ip`
 
 3. `exit`退出登入
+
+### 配置ssh
+
+1. `nuname`获取设备名称`master`
+2. `cd /root`根目录
+3. `ssh-keygen -t rsa`紧跟三次回车，生成无密码密钥对
+4. `ssh-copy-id  master`生成公钥验证文件
+5. `ssh master`验证密钥是否完成
