@@ -29,3 +29,13 @@
 3. `ssh-keygen -t rsa`紧跟三次回车，生成无密码密钥对
 4. `ssh-copy-id  master`生成公钥验证文件
 5. `ssh master`验证密钥是否完成
+
+### ubuntu打开虚拟机后经行的操作
+
+- 构建虚拟机时断网
+
+`sudo apt update`更新软件源
+
+`sudo apt install open-vm-tools`全屏
+
+`sudo apt upgrade`更新软件
