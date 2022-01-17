@@ -30,7 +30,7 @@
 4. `ssh-copy-id  master`生成公钥验证文件
 5. `ssh master`验证密钥是否完成
 
-### ubuntu打开虚拟机后经行的操作
+### Ubuntu打开虚拟机后经行的操作
 
 - 构建虚拟机时断网
 
@@ -39,3 +39,23 @@
 `sudo apt install open-vm-tools`全屏
 
 `sudo apt upgrade`更新软件
+
+### Ubuntu下vi编辑器问题
+
+默认情况下ubuntu上也安装有vi但是奇怪的是这个vi是vim-common版本，基本上用不了所以要先把这个版本的vi卸载掉才可以，卸载命令是：
+
+`sudo apt-get remove vim-common`
+
+卸载成功之后接着执行 :
+
+`sudo apt-get install vim`
+
+### Ubuntu下安装gcc出现错误：无法修正错误，因为您要求某些……
+
+是Ubuntu自生安装的软件版本高，而所安装软件的依赖包版本低的原因
+
+`sudo apt-get install aptitude`
+
+`sudo aptitude install g++`
+
+选择降级
